@@ -9,7 +9,6 @@ require = createRequire(__filename)
 const { readFileSync } = require('node:fs')
 let nativeBinding = null
 const loadErrors = []
-
 const isMusl = () => {
   let musl = false
   if (process.platform === 'linux') {
